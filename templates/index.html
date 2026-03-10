@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Flask + MySQL App</title></head>
+<body>
+  <h1>Messages</h1>
+  <form method="POST">
+    <input type="text" name="message" placeholder="Enter a message" required/>
+    <button type="submit">Submit</button>
+  </form>
+  <ul>
+    {% for msg in messages %}
+      <li>{{ msg }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
+```
+
+### `requirements.txt`
+```
+flask
+mysql-connector-python
