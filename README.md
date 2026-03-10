@@ -270,7 +270,7 @@ Configured via `docker-compose.yml`:
 
 **Your Name**
 - GitHub: [@YOUR_USERNAME](https://github.com/karthik-z)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/karthi03)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/karthik03)
 
 ---
 
