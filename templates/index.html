@@ -1,17 +1,44 @@
 <!DOCTYPE html>
-<html>
-<head><title>Flask + MySQL App</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask + MySQL App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        ul { margin-top: 20px; }
+        li { margin: 6px 0; }
+    </style>
+</head>
 <body>
-  <h1>Messages</h1>
-  <form method="POST">
-    <input type="text" name="message" placeholder="Enter a message" required/>
-    <button type="submit">Submit</button>
-  </form>
-  <ul>
-    {% for msg in messages %}
-      <li>{{ msg }}</li>
-    {% endfor %}
-  </ul>
+    <h1>Messages</h1>
+    <form method="POST">
+        <input type="text" name="message" placeholder="Enter a message" required/>
+        <button type="submit">Submit</button>
+    </form>
+    <ul>
+        {% for msg in messages %}
+            <li>{{ msg }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
-```
